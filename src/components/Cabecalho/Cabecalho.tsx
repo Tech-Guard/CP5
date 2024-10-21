@@ -13,6 +13,7 @@ export default function Cabecalho() {
           className="mr-2"
         />
       </div>
+      <Menu />
     </header>
   );
 }
