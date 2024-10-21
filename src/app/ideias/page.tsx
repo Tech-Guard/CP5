@@ -3,8 +3,8 @@ import Layout from '../layout';
 import { useEffect, useState } from 'react';
 
 interface ImageData {
-  title: any;
-  url: any;
+  title: string;
+  url: string;
 }
 
 const Ideias = () => {
@@ -30,7 +30,6 @@ const Ideias = () => {
   }, []);
   
   return (
-    <Layout>
       <div className="max-w-3xl mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-center">Ideias Principais de Velikovsky</h1>
         <p className="mt-4 text-lg text-gray-700">
@@ -59,7 +58,6 @@ const Ideias = () => {
           </div>
         )}
       </div>
-    </Layout>
   );
 };
 

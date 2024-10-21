@@ -30,7 +30,6 @@ const Teoria = () => {
   }, []);
 
   return (
-    <Layout>
       <div className="max-w-3xl mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-center">Teoria de Velikovsky</h1>
         <p className="mt-4 text-lg text-gray-700">
@@ -60,7 +59,6 @@ const Teoria = () => {
           </div>
         )}
       </div>
-    </Layout>
   );
 };
 
