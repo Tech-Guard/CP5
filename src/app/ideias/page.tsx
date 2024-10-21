@@ -2,8 +2,13 @@
 import Layout from '../layout';
 import { useEffect, useState } from 'react';
 
+interface ImageData {
+  title: any;
+  url: any;
+}
+
 const Ideias = () => {
-  const [imageData, setImageData] = useState(null);
+  const [imageData, setImageData] = useState<ImageData | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {

@@ -2,6 +2,7 @@ import Cabecalho from '@/components/Cabecalho/Cabecalho';
 import Rodape from '@/components/Rodape/Rodape';
 import './globals.css';
 import { ReactNode } from 'react';
+import Head from 'next/head';
 
 interface LayoutProps {
   children: ReactNode;
@@ -10,11 +11,11 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-      <head>
+      <Head>
         <title>Velikovsky</title>
         <meta name="description" content="Explore as ideias e teorias de Immanuel Velikovsky." />
         <link rel="icon" href="/img/logoIcon.png" /> {}
-      </head>
+      </Head>
       <html lang="pt-br">
         <body>
           <Cabecalho />

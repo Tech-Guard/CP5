@@ -3,17 +3,19 @@
 import Layout from '../layout';
 import { useEffect, useState } from 'react';
 
+interface ImageData {
+  title: string;
+  url: string;
+}
+
 const Teoria = () => {
-  const [imageData, setImageData] = useState(null);
+  const [imageData, setImageData] = useState<ImageData | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const res = await fetch('/api/2023-10-23');
         const data = await res.json();
-
-        console.log(data);
-
         if (!res.ok) {
           throw new Error(data.error || 'Erro ao buscar imagem da NASA');
         }
